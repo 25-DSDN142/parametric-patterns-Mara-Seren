@@ -4,9 +4,10 @@ let rect_height = 30;
 let eyeSize = 30;
 let earSize =70;
 
+let ShowLog = true;
 function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(DEVELOP_GLYPH);
-  //pWallpaper.output_mode(GRID_WALLPAPER);
+ // pWallpaper.output_mode(DEVELOP_GLYPH);
+  pWallpaper.output_mode(GRID_WALLPAPER);
   
   pWallpaper.resolution(FIT_TO_SCREEN);
   pWallpaper.show_guide(true); //set this to false when you're ready to print
@@ -14,7 +15,7 @@ function setup_wallpaper(pWallpaper) {
   //Grid settings
   pWallpaper.grid_settings.cell_width  = 200;
   pWallpaper.grid_settings.cell_height = 200;
-  pWallpaper.grid_settings.row_offset  = 50;
+  pWallpaper.grid_settings.row_offset  = 0;
 }
 
 function wallpaper_background() {
@@ -22,10 +23,12 @@ function wallpaper_background() {
 }
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
-  drawEars ()
+   scale (0.6,0.6)
+  drawEars () // phoebe was here
   drawSome ()
   drawHead ()
   drawEyesandNose ()
+  drawLog();
   }
   function drawSome(){
   rect(40 ,40, rect_width, rect_height);
@@ -54,4 +57,17 @@ fill(144, 81, 46)
   circle (160, 60, earSize)
   }
   
+function drawLog() {
+
+  if(ShowLog){
+
+  fill(134,153,71)
+  rect(200, 0.5, 20, 350) 
+  rect(250, 0.5, 20, 350)
+  rect(300, 0.5, 20, 350)
+  rect(1, 200, 350, 20)
+  rect(1, 250, 350, 20)
+  rect(1, 300, 350, 20)
+  }
+}
 
