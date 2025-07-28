@@ -5,9 +5,10 @@ let eyeSize = 30;
 let earSize =70;
 
 let ShowLog = true;
+
 function setup_wallpaper(pWallpaper) {
- // pWallpaper.output_mode(DEVELOP_GLYPH);
-  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.output_mode(DEVELOP_GLYPH);
+  //pWallpaper.output_mode(GRID_WALLPAPER);
   
   pWallpaper.resolution(FIT_TO_SCREEN);
   pWallpaper.show_guide(true); //set this to false when you're ready to print
@@ -19,12 +20,12 @@ function setup_wallpaper(pWallpaper) {
 }
 
 function wallpaper_background() {
-  background(162, 186, 108); //light honeydew green colour
+  background(162, 186, 108); //light pale green colour
 }
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
    scale (0.6,0.6)
-  drawEars () // phoebe was here
+  drawEars () // phoebe was here (helped with getting my code on GitHub)
   drawSome ()
   drawHead ()
   drawEyesandNose ()
