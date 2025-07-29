@@ -3,8 +3,10 @@ let rect_width  = 20;
 let rect_height = 30;
 let eyeSize = 30;
 let earSize =70;
+let noseLength =50;
+let noseWidth =30;
 
-let ShowLog = true;
+let ShowLog = true; //if statement
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(DEVELOP_GLYPH);
@@ -35,6 +37,7 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   rect(40 ,40, rect_width, rect_height);
   fill(49, 40, 40)
   noStroke(0)
+  
   }
   function drawHead(){
   circle (100,100, 150)
@@ -49,7 +52,7 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   ellipse(120,110, eyeSize)
   fill(0)
   noStroke(0)
-  ellipse(100,150, 50,30)
+  ellipse(100,150, noseLength, noseWidth)
   }
   function drawEars(){
 fill(144, 81, 46)
