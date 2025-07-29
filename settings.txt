@@ -10,45 +10,153 @@ Your final settings.txt will look something like this when you are finished:
 Wallpaper 1:
 
 //your parameter variables go here!
-let rect_width  = 20;
-let rect_height = 20;
-let paramter1 = 10;
-let paramter2 = true;
-let paramter3 = 50; 
-let paramter4 = 0; 
-let paramter5 = 60;
+let eyeSize = 30;
+let earSize =70;
+let noseLength =50;
+let noseWidth =30;
+let underNose =70;
+let headSize =150;
+let petalLength =100;
 
+let ShowLine = true; //false removes green lines/ture adds green lines
+let ShowFlower1 = true; //false removes flower 1/true adds flower1
+let ShowFlower2 = true; //false removes flower2/true adds flower2
+let Showbackground= true;//green background
+let Showbackground2= false;//blue background
 function setup_wallpaper(pWallpaper) {
+  //pWallpaper.output_mode(DEVELOP_GLYPH);
   pWallpaper.output_mode(GRID_WALLPAPER);
-  pWallpaper.resolution(NINE_LANDSCAPE);
+  
+  pWallpaper.resolution(FIT_TO_SCREEN);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
-  pWallpaper.grid_settings.cell_width  = 100;
-  pWallpaper.grid_settings.cell_height = 100;
-  pWallpaper.grid_settings.row_offset  = 50;
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 0;
 }
 
 /////////////////////////////////
 
-Wallpaper 2:
+Wallpaper 2: 
 
 //your parameter variables go here!
-let rect_width  = 10;
-let rect_height = 10;
-let paramter1 = 20;
-let paramter2 = false;
-let paramter3 = 50; 
-let paramter4 = 80; 
-let paramter5 = 30;
+let eyeSize = 30;
+let earSize =70;
+let noseLength =50;
+let noseWidth =30;
+let underNose =70;
+let headSize =150;
+let petalLength =200;
 
+let ShowLine = false; //false removes green lines/ture adds green lines
+let ShowFlower1 = true; //false removes flower 1/true adds flower1
+let ShowFlower2 = true; //false removes flower2/true adds flower2
+let Showbackground= true;//green background
+let Showbackground2= false;//blue background
 function setup_wallpaper(pWallpaper) {
+  //pWallpaper.output_mode(DEVELOP_GLYPH);
   pWallpaper.output_mode(GRID_WALLPAPER);
-  pWallpaper.resolution(NINE_LANDSCAPE);
+  
+  pWallpaper.resolution(FIT_TO_SCREEN);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
-  pWallpaper.grid_settings.cell_width  = 100;
-  pWallpaper.grid_settings.cell_height = 100;
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 60;
+}
+
+/////////////////////////////////
+
+Wallpaper 3:
+
+//your parameter variables go here!
+//your parameter variables go here!
+let eyeSize = 0;
+let earSize =0;
+let noseLength =0;
+let noseWidth =0;
+let underNose =70;
+let headSize =150;
+let petalLength =0;
+
+let ShowLine = true; //false removes green lines/ture adds green lines
+let ShowFlower1 = false; //false removes flower 1/true adds flower1
+let ShowFlower2 = false; //false removes flower2/true adds flower2
+let Showbackground= false;//green background
+let Showbackground2= true;//blue background
+function setup_wallpaper(pWallpaper) {
+  //pWallpaper.output_mode(DEVELOP_GLYPH);
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  
+  pWallpaper.resolution(FIT_TO_SCREEN);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
   pWallpaper.grid_settings.row_offset  = 0;
 }
+
+/////////////////////////////////
+
+Wallpaper 4:
+
+//your parameter variables go here!
+//your parameter variables go here!
+let eyeSize = 80;
+let earSize =40;
+let noseLength =20;
+let noseWidth =10;
+let underNose =70;
+let headSize =150;
+let petalLength =80;
+
+let ShowLine = false; //false removes green lines/ture adds green lines
+let ShowFlower1 = true; //false removes flower 1/true adds flower1
+let ShowFlower2 = true; //false removes flower2/true adds flower2
+let Showbackground= false;//green background
+let Showbackground2= true;//blue background
+function setup_wallpaper(pWallpaper) {
+  //pWallpaper.output_mode(DEVELOP_GLYPH);
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  
+  pWallpaper.resolution(FIT_TO_SCREEN);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 80;
+}
+
+/////////////////////////////////
+
+Wallpaper 5:
+
+//your parameter variables go here!
+
+/////////////////////////////////
+
+Wallpaper 6:
+
+//your parameter variables go here!
+
+/////////////////////////////////
+
+Wallpaper 7:
+
+//your parameter variables go here!
+
+/////////////////////////////////
+
+Wallpaper 8:
+
+//your parameter variables go here!
+
+/////////////////////////////////
+
+Wallpaper 9:
+
+//your parameter variables go here!

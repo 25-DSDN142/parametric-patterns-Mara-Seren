@@ -1,19 +1,23 @@
 //your parameter variables go here!
-let rect_width  = 20;
-let rect_height = 30;
-let eyeSize = 30;
-let earSize =70;
-let noseLength =50;
-let noseWidth =30;
+let eyeSize = 100;
+let earSize =0;
+let noseLength =0;
+let noseWidth =0;
+let underNose =0;
+let headSize =0;
+let petalLength =900;
 
-let ShowLog = true; //if statement
-
+let ShowLine = true; //false removes green lines/ture adds green lines
+let ShowFlower1 = true; //false removes flower 1/true adds flower1
+let ShowFlower2 = false; //false removes flower2/true adds flower2
+let Showbackground= false;//green background
+let Showbackground2= true;//blue background
 function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(DEVELOP_GLYPH);
-  //pWallpaper.output_mode(GRID_WALLPAPER);
+  //pWallpaper.output_mode(DEVELOP_GLYPH);
+  pWallpaper.output_mode(GRID_WALLPAPER);
   
   pWallpaper.resolution(FIT_TO_SCREEN);
-  pWallpaper.show_guide(true); //set this to false when you're ready to print
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
   pWallpaper.grid_settings.cell_width  = 200;
@@ -22,30 +26,37 @@ function setup_wallpaper(pWallpaper) {
 }
 
 function wallpaper_background() {
-  background(162, 186, 108); //light pale green colour
-}
+  if(Showbackground){
 
+  background(162, 186, 108); //light pale green colour
+  }
+
+  if(Showbackground2){
+
+  background(20, 63, 102); //dark blue colour
+  }
+}
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
    scale (0.6,0.6)
   drawEars () // phoebe was here (helped with getting my code on GitHub)
-  drawSome ()
+  bearfacecolour ()
   drawHead ()
   drawEyesandNose ()
-  drawLog();
+  drawLog()
+  drawFlower1()
+  drawFlower2()
   }
-  function drawSome(){
-  rect(40 ,40, rect_width, rect_height);
+  function bearfacecolour(){
   fill(49, 40, 40)
   noStroke(0)
-  
   }
   function drawHead(){
-  circle (100,100, 150)
+  circle (100,100, headSize)
   }
   function drawEyesandNose() {
   fill(144, 81, 46)
   noStroke(0)
-  ellipse (100,150, 90,70)
+  ellipse (100,150, 90,underNose)
   fill(96, 158, 189)
   noStroke(0)
   ellipse(80,110, eyeSize)
@@ -63,7 +74,7 @@ fill(144, 81, 46)
   
 function drawLog() {
 
-  if(ShowLog){
+  if(ShowLine){
 
   fill(134,153,71)
   rect(200, 0.5, 20, 350) 
@@ -72,6 +83,26 @@ function drawLog() {
   rect(1, 200, 350, 20)
   rect(1, 250, 350, 20)
   rect(1, 300, 350, 20)
+  }
+}
+function drawFlower1(){
+  if(ShowFlower1){
+
+  fill(138, 102, 116)
+  ellipse (210, 240, petalLength, 50)
+  ellipse (210, 240, 50, petalLength)
+  fill(164, 154, 152)
+  ellipse (210, 240, 50)
+  }
+}
+function drawFlower2(){
+  if(ShowFlower2){
+
+ fill(138, 102, 116)
+  ellipse (290, 290, petalLength, 50)
+  ellipse (290, 290, 50, petalLength)
+  fill(164, 154, 152)
+  ellipse (290, 290, 50)
   }
 }
 
