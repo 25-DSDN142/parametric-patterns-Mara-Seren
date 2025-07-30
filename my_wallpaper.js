@@ -1,17 +1,17 @@
 //your parameter variables go here!
-let eyeSize = 100;
-let earSize =0;
-let noseLength =0;
-let noseWidth =0;
-let underNose =0;
-let headSize =0;
-let petalLength =900;
+let eyeSize = 30;
+let earSize =70;
+let noseLength =50;
+let noseWidth =30;
+let underNose =70;
+let headSize =150;
+let petalLength =100;
 
 let ShowLine = true; //false removes green lines/ture adds green lines
 let ShowFlower1 = true; //false removes flower 1/true adds flower1
-let ShowFlower2 = false; //false removes flower2/true adds flower2
-let Showbackground= false;//green background
-let Showbackground2= true;//blue background
+let ShowFlower2 = true; //false removes flower2/true adds flower2
+let Showbackground= true;//green background
+let Showbackground2= false;//blue background
 function setup_wallpaper(pWallpaper) {
   //pWallpaper.output_mode(DEVELOP_GLYPH);
   pWallpaper.output_mode(GRID_WALLPAPER);
